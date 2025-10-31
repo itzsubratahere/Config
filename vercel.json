@@ -1,5 +1,8 @@
 {
   "rewrites": [
-    { "source": "/config.json", "destination": "/public/config.json" }
+    {
+      "source": "/config.json",
+      "destination": "/public/config.json"
+    }
   ]
 }
