@@ -2,7 +2,17 @@
   "rewrites": [
     {
       "source": "/config.json",
-      "destination": "/public/config.json"
+      "destination": "/config.json"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/config.json",
+      "headers": [
+        { "key": "Cache-Control", "value": "no-cache, no-store, must-revalidate" },
+        { "key": "Pragma", "value": "no-cache" },
+        { "key": "Expires", "value": "0" }
+      ]
     }
   ]
 }
